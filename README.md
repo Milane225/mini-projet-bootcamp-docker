@@ -18,13 +18,14 @@ Installation de docker sur la machine ou utilisation de dockerlabs.
 
 ```
 mini-projet-bootcamp-docker/
-├── simple_api                   # Deployment MySQL
-│   ├── Dockerfile               # Deployment WordPress
-│   ├── student_age.json         # Deployment WordPress
-│   ├── student_age.py           # Deployment WordPress
+├── simple_api                   # 
+│   ├── Dockerfile               # 
+│   ├── requirements.txt         # 
+│   ├── student_age.json         # 
+│   ├── student_age.py           # 
 │
-├── Website                      # Création du NameSpace
-│   ├── index.php                # Deployment WordPress
+├── Website                      # 
+│   ├── index.php                # 
 │
 ├── Instructions.md              # Enoncé du projet
 ├── README.md                    # Documentation du projet
