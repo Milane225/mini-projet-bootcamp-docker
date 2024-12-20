@@ -12,22 +12,24 @@ L'application est composée de 2 modules interconntectés qui sont :
 
 ## Prérequis
 
-- Un cluster Kubernetes fonctionnel (dockerlabs, Minikube ou un cluster cloud).
-- `kubectl` installé et configuré pour interagir avec votre cluster.
-- Accès à une image Docker de WordPress et de MySQL sur un registre public ou privé.
+Installation de docker sur la machine ou utilisation de dockerlabs.
 
 ## Structure du projet
 
 ```
-mini-projet-bootcamp-kubernetes/
-├── deployment-mysql.yml             # Deployment MySQL
-├── deployment-wordpress.yml         # Deployment WordPress
-├── namespace.yml                    # Création du NameSpace
-├── pv.yml                           # Provisionnement du PersistentVolume (PV)
-├── pvc.yml                          # Association du PersistentVolume (PV) au PersistentVolumeClaims (PVC)
-├── service-cluster-ip-mysql.yml     # Service MySQL (ClusterIP)
-├── service-nodeport-wordpress.yml   # Service WordPress (NodePort)
-├── README.md                        # Documentation du projet
+mini-projet-bootcamp-docker/
+├── simple_api                   # Deployment MySQL
+│   ├── Dockerfile               # Deployment WordPress
+│   ├── student_age.json         # Deployment WordPress
+│   ├── student_age.py           # Deployment WordPress
+│
+├── Website                      # Création du NameSpace
+│   ├── index.php                # Deployment WordPress
+│
+├── Instructions.md              # Enoncé du projet
+├── README.md                    # Documentation du projet
+├── docker-compose-registry.yml  #
+├── docker-compose.yml           #
 ````
 
 
