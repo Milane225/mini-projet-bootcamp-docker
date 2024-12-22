@@ -38,9 +38,17 @@ mini-projet-bootcamp-docker/
 
 ### Mise en place et test
 
-1- Clôner le repo
+#### 1- Clôner le repo
 ````
 git clone https://github.com/diranetafen/student-list
 ````
 
-2- 
+#### 2- Construction de l'image Docker de l'API
+==> Tout d'abord, se déplacer dans le repertoire contenant le fichier Dockerfile
+````
+cd mini-projet-bootcamp-docker/simple_api
+````
+==> Lancer la création de l'image
+````
+docker build . -t api_student_list:v1 .
+````
