@@ -71,11 +71,15 @@ docker network ls
 
 
 #### 4- Lancement du conteneur de l'API Backend avec une série de configurations spécifiques
+==> Avant le lancement du conteneur, il faudrait se positionner à la racine du repertoire du projet
+````
+cd ..
+````
 ==> Lancement du conteneur nommé api_student_list
 ````
 docker run -d --name api_student_list --network student_list_network -v ./simple_api/:/data/ api_student_list
 ````
-==> Listons nos conteneurs en cours d'exécution
+==> Listons nos conteneurs en cours d'exécution parmi lesquels doit se trouver notre conteneur api_student_list
 ````
 docker ps
 ````
