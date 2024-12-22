@@ -58,12 +58,24 @@ Docker images
 ````
 <illustration en image>
 
-#### 2- Création d'un réseau de type Bridge (Pont).C'est le réseau par défaut pour les conteneurs Docker qui permet aux coneneurs de communiquer entre eux
-==>Création du réseau Bridge
+#### 3- Création d'un réseau de type Bridge (Pont).C'est le réseau par défaut pour les conteneurs Docker qui leur permet de communiquer entre eux
+==> Création du réseau Bridge
 ````
 docker network create student_list_network --driver=bridge
 ````
-==>Afficher la liste des réseaux
+==> Afficher la liste des réseaux
 ````
 docker network ls
+````
+<illustration en image>
+
+
+#### 4- Lancement du conteneur de l'API Backend avec une série de configurations spécifiques
+==> Lancement du conteneur nommé api_student_list
+````
+docker run -d --name api_student_list --network student_list_network -v ./simple_api/:/data/ api_student_list
+````
+==> Listons nos conteneurs en cours d'exécution
+````
+docker ps
 ````
