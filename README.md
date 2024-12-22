@@ -52,3 +52,18 @@ cd mini-projet-bootcamp-docker/simple_api
 ````
 docker build . -t api_student_list:v1 .
 ````
+==> Vérification de notre image créée
+````
+Docker images
+````
+<illustration en image>
+
+#### 2- Création d'un réseau de type Bridge (Pont).C'est le réseau par défaut pour les conteneurs Docker qui permet aux coneneurs de communiquer entre eux
+==>Création du réseau Bridge
+````
+docker network create student_list_network --driver=bridge
+````
+==>Afficher la liste des réseaux
+````
+docker network ls
+````
