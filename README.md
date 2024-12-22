@@ -18,20 +18,29 @@ Installation de docker sur la machine ou utilisation de dockerlabs.
 
 ```
 mini-projet-bootcamp-docker/
-├── simple_api                   # 
-│   ├── Dockerfile               # 
+├── simple_api                   
+│   ├── Dockerfile               # Fichier permettant de construire l'image Doker de l'API
 │   ├── requirements.txt         # 
-│   ├── student_age.json         # 
-│   ├── student_age.py           # 
+│   ├── student_age.json         # Fichier au format JSON contenant le nom, prénom et l'âge des étudiants
+│   ├── student_age.py           # Fichier contenant le code source de l'API en Python
 │
 ├── Website                      # 
-│   ├── index.php                # 
+│   ├── index.php                # Page Web developpée en HTML/PHP qui consomme l'API qui affiche la liste des étudiants et leurs âges
 │
 ├── Instructions.md              # Enoncé du projet
 ├── README.md                    # Documentation du projet
-├── docker-compose-registry.yml  #
-├── docker-compose.yml           #
+├── docker-compose-registry.yml  # pour lancer le registre local et son interface utilisateur
+├── docker-compose.yml           # Permet de lancer l'API et l'application Web dans des conteneurs
 ````
 
 
 ## Déploiement
+
+### Mise en place et test
+
+1- Clôner le repo
+````
+git clone https://github.com/diranetafen/student-list
+````
+
+2- 
