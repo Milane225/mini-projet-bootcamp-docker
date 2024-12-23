@@ -86,6 +86,7 @@ docker run -d --name api_student_list --network student_list_network -v ./simple
     > **--network student_list_network** : connecte leconteneur au réseau Docker nommé student_list_network<br>
     > **-v ./simple_api/:/data/** : cette option monte un volume entre la machine hôte et le conteneur<br>
     > **api_student_list** : le nom de l'image utilisée pour créer le conteneur<br>
+    
 ==> Listons nos conteneurs en cours d'exécution parmi lesquels doit se trouver le conteneur api_student_list
 ````
 docker ps
