@@ -79,13 +79,13 @@ cd ..
 ````
 docker run -d --name api_student_list --network student_list_network -v ./simple_api/:/data/ api_student_list
 ````
-   **Expliquation de la commande**
-    > **docker run** : commande principale pour lancer un conteneur basé sur une image
-    > **-d** : lance le conteneur en mode détaché (exécution des tâches en arrière plan)
-    > **--name api_student_list** : le nom du conteneur
-    > **--network student_list_network** : connecte leconteneur au réseau Docker nommé student_list_network
-    > **-v ./simple_api/:/data/** : cette option monte un volume entre la machine hôte et le conteneur
-    > **api_student_list** : le nom de l'image utilisée pour créer le conteneur
+   **Expliquation de la commande**<br>
+    > **docker run** : commande principale pour lancer un conteneur basé sur une image<br>
+    > **-d** : lance le conteneur en mode détaché (exécution des tâches en arrière plan)<br>
+    > **--name api_student_list** : le nom du conteneur<br>
+    > **--network student_list_network** : connecte leconteneur au réseau Docker nommé student_list_network<br>
+    > **-v ./simple_api/:/data/** : cette option monte un volume entre la machine hôte et le conteneur<br>
+    > **api_student_list** : le nom de l'image utilisée pour créer le conteneur<br>
 ==> Listons nos conteneurs en cours d'exécution parmi lesquels doit se trouver le conteneur api_student_list
 ````
 docker ps
