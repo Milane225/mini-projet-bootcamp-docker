@@ -79,7 +79,7 @@ cd ..
 ````
 docker run -d --name api_student_list --network student_list_network -v ./simple_api/:/data/ api_student_list
 ````
-   **Expliquation de la commande**<br>
+   **Expliquation de la commanden** :<br>
     > **docker run** : commande principale pour lancer un conteneur basé sur une image<br>
     > **-d** : lance le conteneur en mode détaché (exécution des tâches en arrière plan)<br>
     > **--name api_student_list** : le nom du conteneur<br>
@@ -91,3 +91,7 @@ docker run -d --name api_student_list --network student_list_network -v ./simple
 ````
 docker ps
 ````
+
+#### 5- Mise à jour du fichier inex.html contenu dans le dossier website
+==> Ligne du fichier à mettre à jour
+$url = 'http://<api_ip_or_name:port>/pozos/api/v1.0/get_student_ages'
