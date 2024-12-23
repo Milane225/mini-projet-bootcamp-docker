@@ -25,7 +25,7 @@ mini-projet-bootcamp-docker/
 │   ├── student_age.py           # Fichier contenant le code source de l'API en Python
 │
 ├── Website                      # 
-│   ├── index.php                # Page Web developpée en HTML/PHP qui consomme l'API qui affiche la liste des étudiants et leurs âges
+│   ├── index.php                # Page Web developpée en HTML/PHP qui consomme l'API et affiche la liste des étudiants et leurs âges
 │
 ├── Instructions.md              # Enoncé du projet
 ├── README.md                    # Documentation du projet
@@ -95,3 +95,10 @@ docker ps
 #### 5- Mise à jour du fichier inex.html contenu dans le dossier website
 ==> Ligne du fichier à mettre à jour <br>
 `$url = 'http://<api_ip_or_name:port>/pozos/api/v1.0/get_student_ages'`
+
+==> La remplacer par la ligne qui suit <br>
+````
+http://api_student_list:5000/pozos/api/v1.0/get_student_ages
+````
+
+#### 6- Lancement du conteneur de l'application Web
