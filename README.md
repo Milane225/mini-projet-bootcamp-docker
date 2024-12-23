@@ -93,5 +93,5 @@ docker ps
 ````
 
 #### 5- Mise à jour du fichier inex.html contenu dans le dossier website
-==> Ligne du fichier à mettre à jour
+==> Ligne du fichier à mettre à jour <br>
 `$url = 'http://<api_ip_or_name:port>/pozos/api/v1.0/get_student_ages'`
