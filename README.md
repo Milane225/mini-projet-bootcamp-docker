@@ -108,4 +108,23 @@ docker run -d --name=webapp_student_list -p 80:80 --network=student_list_network
 docker ps
 ````
 
-==>Les variables d'environnements `-e USERNAME=toto` et `-e PASSWORD=python` sont contenus dans le fichier `.simple_api/student_age.py`
+==>Les valeurs saisies pour les variables d'environnements `-e USERNAME=toto` et `-e PASSWORD=python` sont contenus dans le fichier `.simple_api/student_age.py`
+
+#### 7- Teste de l'API via l'application Web
+
+##### 7-a) Teste avec la ligne de commande
+==> Lancement du test avec la ligne de commande
+docker exec webapp_student_list curl -u toto:python -X GET http://api_student_list:5000/pozos/api/v1.0/get_student_ages
+==> Résultat du test de la ligne de commande
+
+##### 7-b) Teste sur un navigateur Web
+==> Teste sur dockerlabs
+
+==>Teste sur vagrant
+   - Récuperer l'adresse IP de votre machine avec la commande qui suit
+     ``hostname -I``
+   - Renseigner l'adresse IP de votre machine et le port exposé dans le navigateur
+     ``192.168.5.2:80``
+
+#### 8- Suppression de notre environnement de travail
+
