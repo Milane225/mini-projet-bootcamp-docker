@@ -34,7 +34,7 @@ mini-projet-bootcamp-docker/
 ````
 
 
-## Déploiement
+## Déploiement avec la ligne de commande
 
 ### Mise en place et test
 
@@ -127,4 +127,16 @@ docker exec webapp_student_list curl -u toto:python -X GET http://api_student_li
      ``192.168.5.2:80``
 
 #### 8- Suppression de notre environnement de travail
+````
+docker stop api.student_list
+docker stop webapp.student_list
+docker network rm student_list.network
+docker network ls
+docker ps
+````
+
+## Déploiement avec l'Infastructure as Code (IaC)
+L'IaC nous permet d'automatiser le déploiement de de nos conteneurs dans un fichier YML. Cela nous évite de faire nos déploiement manuellement comme cela a été le cas jusqu'à présent.
+
+#### 1- Utilisation du fichier docker-compose pour le déploiement de nos services et réseaux
 
