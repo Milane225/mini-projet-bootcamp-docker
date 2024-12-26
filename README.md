@@ -102,3 +102,10 @@ http://api_student_list:5000/pozos/api/v1.0/get_student_ages
 ````
 
 #### 6- Lancement du conteneur de l'application Web
+==> Lancement du conteneur
+````
+docker run -d --name=webapp_student_list -p 80:80 --network=student_list_network -v ./website/:/var/www/html -e USERNAME=toto -e PASSWORD=python php:apache
+docker ps
+````
+
+==>Les variables d'environnements `-e USERNAME=toto` et `-e PASSWORD=python` sont contenus dans le fichier `.simple_api/student_age.py`
