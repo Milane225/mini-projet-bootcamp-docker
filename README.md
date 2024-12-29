@@ -77,7 +77,7 @@ cd ..
 ````
 ==> Lancement du conteneur nommé api_student_list
 ````
-docker run -d --name api_student_list --network student_list_network -v ./simple_api/:/data/ api_student_list
+docker run -d --name api_student_list --network student_list_network -v ./simple_api/:/data/ api_student_list:v1
 ````
    **Expliquation de la commanden** :<br>
     > **docker run** : commande principale pour lancer un conteneur basé sur une image<br>
