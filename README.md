@@ -139,4 +139,7 @@ docker ps
 L'IaC nous permet d'automatiser le déploiement de de nos conteneurs dans un fichier YML. Cela nous évite de faire nos déploiement manuellement comme cela a été le cas jusqu'à présent.
 
 #### 1- Utilisation du fichier docker-compose pour le déploiement de nos services et réseaux
+````
+docker-compose up -d
+````
 
