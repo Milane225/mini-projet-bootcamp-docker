@@ -143,3 +143,11 @@ L'IaC nous permet d'automatiser le déploiement de de nos conteneurs dans un fic
 docker-compose up -d
 ````
 
+#### 2- Explication de notre fichier dcker-compose
+Le fichier docker-compose.yml configure un environnement Docker pour une application composée de deux services : 
+    - un serveur web (webapp_student_list)
+    - une API backend (api_student_list).
+Une fois démarré avec docker-compose up, ce code lance les deux conteneurs webapp_student_list et api_student_list. Dans notre cas, le conteneur api_student_list est lancé en premier puisque cela a été spécifié dans la section `depends_on` du fichier docker-compose.yml.
+Ensuite le port 80 est exposé et un réseau  est crée pour la communication entre le frontend (web) et le backend (API).
+
+#### 3- Test de l'application
