@@ -50,7 +50,7 @@ cd mini-projet-bootcamp-docker/simple_api
 ````
 ==> Lancer la création de l'image
 ````
-docker build . -t api_student_list:v1 .
+docker build -t api_student_list:v1 .
 ````
 ==> Vérification de notre image créée
 ````
