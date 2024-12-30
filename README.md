@@ -129,6 +129,7 @@ docker ps
 docker exec webapp_student_list curl -u toto:python -X GET http://api_student_list:5000/pozos/api/v1.0/get_student_ages
 ````
 ==> Résultat du test de la ligne de commande
+![Resultat1](https://github.com/user-attachments/assets/ae59ad65-f016-449c-964a-e4cff5080d03)
 
 ##### 7-b) Teste sur un navigateur Web
 ==> Teste sur dockerlabs
