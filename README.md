@@ -48,7 +48,7 @@ git clone https://github.com/diranetafen/student-list
 ````
 cd student-list/simple_api
 ````
-==> Remplir le Dockerfile avec le code qui suit
+==> Remplir le Dockerfile avec le code qui suit (vi Dockerfile)
 ````
 FROM python:2.7-buster
 LABEL org.opencontainers.image.authors="Cissé Lamine laminecissecis225@gmail.com"
