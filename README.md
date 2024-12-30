@@ -103,7 +103,7 @@ docker run -d --name api_student_list --network student_list_network -v ./simple
 docker ps
 ````
 
-#### 5- Mise à jour du fichier inex.html contenu dans le dossier website
+#### 5- Mise à jour du fichier inex.php (ligne 29) contenu dans le dossier website
 ==> Ligne du fichier à mettre à jour <br>
 `$url = 'http://<api_ip_or_name:port>/pozos/api/v1.0/get_student_ages'`
 
