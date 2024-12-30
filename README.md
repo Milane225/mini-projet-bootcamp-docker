@@ -125,7 +125,9 @@ docker ps
 
 ##### 7-a) Teste avec la ligne de commande
 ==> Lancement du test avec la ligne de commande
+````
 docker exec webapp_student_list curl -u toto:python -X GET http://api_student_list:5000/pozos/api/v1.0/get_student_ages
+````
 ==> Résultat du test de la ligne de commande
 
 ##### 7-b) Teste sur un navigateur Web
